@@ -120,7 +120,9 @@ const themes = {
 };
 
   return (
-    <div className="min-h-screen bg-black text-white overflow-hidden relative flex items-center justify-center p-6">
+    <div 
+    translate="no"
+    className="min-h-screen bg-black text-white overflow-hidden relative flex items-center justify-center p-6">
 
       <div
         className="absolute inset-0 bg-cover bg-center opacity-45"
@@ -320,7 +322,7 @@ const themes = {
               <h1 className="text-5xl font-serif text-amber-100 mb-6">
                 {theme === "vampire"
   ? "O pacto foi selado."
-  : "Aceito."}
+  : "Missão Aceita."}
               </h1>
 
               <p className="text-lg md:text-xl text-zinc-200 leading-8 md:leading-9 px-2">
