@@ -150,11 +150,11 @@ const themes = {
       <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/40 to-black/70" />
 
       <div className="relative z-10 max-w-2xl w-full">
-        <div className="backdrop-blur-none bg-black/5 border border-white/10 rounded-3xl p-8 md:p-12 shadow-lg text-center animate-fadeIn">
+        <div className="backdrop-blur-none bg-black/5 border border-white/10 rounded-3xl p-6 md:p-12 shadow-lg text-center animate-fadeIn">
 
           {!theme ? (
   <>
-    <h1 className="text-5xl md:text-6xl font-serif mb-8 text-amber-100">
+    <h1 className="text-3xl md:text-6xl font-serif mb-8 text-amber-100 leading-tight">
       Escolha vosso reino
     </h1>
 
@@ -196,7 +196,7 @@ const themes = {
   <>
     {step < screens[theme].length ? (
       <>
-        <h1 className="text-4xl md:text-5xl font-serif mb-8 tracking-wide text-amber-100">
+        <h1 className="text-3xl md:text-5xl font-serif mb-8 tracking-wide text-amber-100">
           {screens[theme][step].title}
         </h1>
 
@@ -217,7 +217,7 @@ const themes = {
           E então...
         </h1>
 
-        <p className="text-xl md:text-2xl leading-10 text-zinc-100 mb-12">
+        <p className="text-xl md:text-2xl leading-8 md:leading-10 text-zinc-100 mb-12">
           {theme === "vampire"
   ? "Aceitaria continuar esta história em um primeiro encontro além das telas e reinos sombrios?"
   : "Aceitaria transformar nossas conversas em um primeiro encontro fora das muralhas digitais?"}
@@ -256,11 +256,11 @@ const themes = {
           🌙
         </div>
 
-        <h1 className="text-5xl font-serif text-red-200 mb-6">
+        <h1 className="text-3xl font-serif text-red-200 mb-6">
           Oh... tudo bem.
         </h1>
 
-        <p className="text-xl text-zinc-300 leading-9 max-w-xl mx-auto">
+        <p className="text-lg md:text-xl text-zinc-300 leading-8 md:leading-9 max-w-xl mx-auto">
           Nem todos estão prontos para atravessar os corredores da noite.
           <br /><br />
           Ainda assim... esta criatura sombria agradece por ter chegado até aqui.
@@ -290,7 +290,7 @@ const themes = {
           Compreendo, princesa.
         </h1>
 
-        <p className="text-xl text-zinc-300 leading-9 max-w-xl mx-auto">
+        <p className="text-lg md:text-xl text-zinc-300 leading-8 md:leading-9 max-w-xl mx-auto">
           Nem toda jornada precisa começar imediatamente.
           <br /><br />
           Ainda assim... este cavaleiro agradece por ter caminhado até aqui.
@@ -320,10 +320,10 @@ const themes = {
               <h1 className="text-5xl font-serif text-amber-100 mb-6">
                 {theme === "vampire"
   ? "O pacto foi selado."
-  : "Missão aceita."}
+  : "Aceito."}
               </h1>
 
-              <p className="text-xl text-zinc-200 leading-9">
+              <p className="text-lg md:text-xl text-zinc-200 leading-8 md:leading-9 px-2">
                 {theme === "vampire"
   ? "Talvez este seja apenas o começo de uma história além dos reinos sombrios digitais."
   : "Então que esta seja apenas a primeira página de uma bela história."}
